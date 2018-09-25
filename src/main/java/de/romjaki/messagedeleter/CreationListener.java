@@ -31,7 +31,8 @@ public class CreationListener extends ListenerAdapter {
                         toDelete.add(m);
                     }
                 }
-                System.out.printf("Scheduling %d messages for deletion%n", toDelete.size());
+                if (toDelete.size() > 0)
+                    System.out.printf("Scheduling %d messages for deletion%n", toDelete.size());
                 toDelete.stream()
                         .filter(message ->
                                 message.getCreationTime()
