@@ -6,7 +6,8 @@ Dieser Bot löscht alle Nachrichten nache einem Timeout von 24h. Auch wenn der B
 ```json5
 {
   "token":"AIUEOHGPOFAIHJFÖDUAIOFEJLAUJIL" /* Das Bot token. Siehe https://discordapp.com/developers/applications/me */,
-  "channel": "467792764785000459" // Die Channel Id. Aktiviere Developer Modus in deinen Discord Einstellungen -> Appearance -> Developer Mode und rechtsklicke den kanal -> copy id
+  "channel": "467792764785000459" /* Die Channel Id. Aktiviere Developer Modus in deinen Discord Einstellungen -> Appearance -> Developer Mode und rechtsklicke den kanal -> copy id*/,
+  "deletePinned": false /* Falls `false` werden gepinnte Nachrichten nicht gelöscht.. */
 }
 ```
 Command: 

@@ -10,6 +10,7 @@ public class Config {
     private static Config instance;
     private static File configFile = new File("config.json");
     public String token;
+    public boolean deletePinned;
     public String channel;
 
 

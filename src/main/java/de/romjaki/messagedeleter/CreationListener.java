@@ -27,7 +27,7 @@ public class CreationListener extends ListenerAdapter {
                 OffsetDateTime twoWeeks = OffsetDateTime.now().minusDays(13);
                 List<Message> toDelete = new ArrayList<>();
                 for (Message m : channel.getIterableHistory()) {
-                    if (m.getCreationTime().compareTo(terminator) < 0) {
+                    if (m.getCreationTime().compareTo(terminator) < 0 && (!m.isPinned() || Config.getInstance().deletePinned)) {
                         toDelete.add(m);
                     }
                 }
